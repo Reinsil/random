@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./libs/choices.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="wrapper">
+      <div class="checkbox wrapper__item">
+        <div class="checkbox__heading">Категории:</div>
+        <ul class="checkbox__list">
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__normal" type="checkbox">checkbox
+              <span class="checkbox__custom"></span>
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__normal" type="checkbox">checkbox
+              <span class="checkbox__custom"></span>
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__normal" type="checkbox">checkbox
+              <span class="checkbox__custom"></span>
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__normal" type="checkbox">checkbox
+              <span class="checkbox__custom"></span>
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__normal" type="checkbox">checkbox
+              <span class="checkbox__custom"></span>
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__normal" type="checkbox">checkbox
+              <span class="checkbox__custom"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="select wrapper__item">
+        <select name="select">
+          <option value="">Материал</option>
+          <option value="1">Древесина</option>
+          <option value="2">Металл</option>
+          <option value="3">Камень</option>
+          <option value="4">Пластик</option>
+          <option value="5">Композитный</option>
+          <option value="6">Гипс</option>
+        </select>
+      </div>
+
+      <div class="map wrapper__item" id="map"></div>
+
+      <div class="scroll wrapper__item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, amet! Voluptatem explicabo, distinctio ab delectus blanditiis, mollitia aut perferendis consectetur pariatur cumque nostrum, veritatis dolores officia modi voluptatibus iure error.
+        Atque eveniet consequuntur similique quo molestiae, aperiam optio velit sed quidem cumque praesentium a, quis hic, magni illum. Commodi quaerat nesciunt tempora voluptatum rem quidem magni aut omnis eos possimus?
+        Recusandae nam molestiae harum, esse perferendis minus doloremque voluptatum, error non soluta fuga fugiat ratione dolorem eum a ipsum ab mollitia maiores illo eaque dicta ipsa minima ipsam? Perspiciatis, ducimus.
+        Ut deleniti quis tempora vitae molestiae pariatur perspiciatis voluptatum nam magni fuga. Tempore illo ut esse sint, commodi possimus veritatis sed aperiam minima et labore voluptatibus, atque iusto consectetur laboriosam.
+        Rem doloremque molestiae repellat adipisci, voluptates nam at ipsam esse atque unde deleniti exercitationem inventore quidem obcaecati possimus harum ab magnam impedit nobis voluptate dolores porro, iure quam. Officia, doloremque?
+        Necessitatibus reprehenderit libero repellendus voluptate doloribus vitae eos facere, autem dolores perspiciatis atque vel minima, praesentium officiis fugit nulla culpa numquam tempore quo? Explicabo eum deserunt obcaecati reiciendis exercitationem eos.
+        Ea aspernatur dolores sequi est, consectetur voluptas dolorum perspiciatis, quos nesciunt repellat laborum corrupti harum recusandae blanditiis cumque nostrum? Explicabo eveniet sequi qui labore repellendus animi nam quidem voluptas. Obcaecati!
+        Veritatis aut, minima temporibus, veniam assumenda provident nulla facere voluptas corrupti ullam dignissimos laborum ratione maxime est possimus eveniet quos officiis molestias quis, perspiciatis impedit atque architecto cum! Illo, tempora.
+        Nostrum consectetur doloribus est delectus ad dolorem odio illum adipisci earum inventore voluptatem, hic eius aliquid quo et nobis soluta aperiam sequi quasi amet voluptate autem. Cum praesentium ipsum ea!
+        Harum ex laborum laudantium autem quasi culpa cumque rerum ea voluptas sint eum dolore alias, omnis ad fuga quis. Qui molestiae omnis animi delectus reiciendis iure impedit facere at debitis.
+      </div>
+
+      <div class="form__wrapper wrapper__item">
+        <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <div class="form__box">
+            <input class="form__item" id="name" type="text" name="Имя" placeholder="Имя*">
+          </div>
+          <div class="form__box">
+            <input class="form__item" id="tel" type="tel" name="tel" placeholder="Телефон*">
+          </div>
+          <div class="form__box">
+            <input class="form__item" id="email" type="email" name="email" placeholder="E-mail*">
+          </div>
+          <button class="form__button" type="submit">Заказать</button>
+        </form>
+      </div>
+
+      <div class="descr wrapper__item">
+        <p class="descr__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel iste facere amet qui debitis officiis molestias pariatur voluptas vitae, quam saepe? Saepe corrupti necessitatibus voluptas. Voluptas in ullam assumenda.
+          <span class="tooltip" data-tippy-content="Глава 2, страница 176">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+                fill="#BCBCBC" />
+            </svg>
+          </span>
+        </p>
+        <p class="descr__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae voluptates exercitationem eaque, sint quos suscipit molestiae laborum? Odit qui, eius ducimus, perspiciatis, accusantium delectus sunt veniam numquam aperiam placeat iste?
+          <span class="tooltip" data-tippy-content="Глава 2, страница 176">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+                fill="#BCBCBC" />
+            </svg>
+          </span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./libs/choices.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="./libs/inputmask.min.js"></script>
+  <script src="./libs/just-validate.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
